@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--helloworld-->
+  <servlet>
+    <servlet-name>nessy</servlet-name>
+    <servlet-class>com.rika.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>nessy</servlet-name>
+    <url-pattern>/nessy</url-pattern>
+  </servlet-mapping>
+
+  <!-- helloform-->
+
+  <servlet>
+    <servlet-name>Helloform</servlet-name>
+    <servlet-class>com.rika.HelloForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Helloform</servlet-name>
+    <url-pattern>/HelloForm</url-pattern>
+  </servlet-mapping>
+
+  <!--checkbox-->
+  <servlet>
+    <servlet-name>checkbox</servlet-name>
+    <servlet-class>com.rika.Checkbox</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkbox</servlet-name>
+    <url-pattern>/Checkbox</url-pattern>
+  </servlet-mapping>
+
+  <!--readparams-->
+  <servlet>
+    <servlet-name>ReadParams</servlet-name>
+    <servlet-class>com.rika.ReadParams</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadParams</servlet-name>
+    <url-pattern>/ReadParams</url-pattern>
+  </servlet-mapping>
+
+
+  <filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>com.rika.LogFilter</filter-class>
+    <init-param>
+      <param-name>Site</param-name>
+      <param-value>菜鸟教程</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!--DisplayHeader-->
+  <servlet>
+    <servlet-name>DisplayHeader</servlet-name>
+    <servlet-class>com.rika.DisplayHeader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayHeader</servlet-name>
+    <url-pattern>/DisplayHeader</url-pattern>
+  </servlet-mapping>
+
+  <!--Refresh-->
+  <servlet>
+    <servlet-name>Refresh</servlet-name>
+    <servlet-class>com.rika.Refresh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Refresh</servlet-name>
+    <url-pattern>/Refresh</url-pattern>
+  </servlet-mapping>
+
+  <!--showError-->
+  <servlet>
+    <servlet-name>ShowError</servlet-name>
+    <servlet-class>com.rika.showError</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowError</servlet-name>
+    <url-pattern>/showError</url-pattern>
+  </servlet-mapping>
+
+  <!--ErrorHandler-->
+  <servlet>
+    <servlet-name>ErrorHandler</servlet-name>
+    <servlet-class>com.rika.ErrorHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ErrorHandler</servlet-name>
+    <url-pattern>/ErrorHandler</url-pattern>
+  </servlet-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type >
+    <location>/ErrorHandler</location>
+  </error-page>
+
+
+  <!--ReadCookies-->
+  <servlet>
+    <servlet-name>ReadCookies</servlet-name>
+    <servlet-class>com.rika.ReadCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadCookies</servlet-name>
+    <url-pattern>/ReadCookies</url-pattern>
+  </servlet-mapping>
+
+  <!--DeleteCookies -->
+  <servlet>
+    <servlet-name>DeleteCookies</servlet-name>
+    <servlet-class>com.rika.DeleteCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCookies</servlet-name>
+    <url-pattern>/DeleteCookies</url-pattern>
+  </servlet-mapping>
+
+  <!--SessionTrack -->
+  <servlet>
+    <servlet-name>SessionTrack</servlet-name>
+    <servlet-class>com.rika.SessionTrack</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <url-pattern>/SessionTrack</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <servlet-class>com.rika.DatabaseAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <url-pattern>/DatabaseAccess</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
